@@ -1,0 +1,14 @@
+C:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.AssemblyInfoInputs.cache
+C:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.AssemblyInfo.cs
+C:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.csproj.CoreCompileInputs.cache
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\bin\Debug\net9.0\Project.exe
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\bin\Debug\net9.0\Project.deps.json
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\bin\Debug\net9.0\Project.runtimeconfig.json
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\bin\Debug\net9.0\Project.dll
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\bin\Debug\net9.0\Project.pdb
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.dll
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\refint\Project.dll
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.pdb
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\Project.genruntimeconfig.cache
+c:\Users\Amirhossein\Desktop\Algrorithm\Project\Project\obj\Debug\net9.0\ref\Project.dll
