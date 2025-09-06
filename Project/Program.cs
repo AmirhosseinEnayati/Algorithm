@@ -4,7 +4,8 @@ using Project.Problems.TwoPointers;
 Console.WriteLine("---- Start -----");
 
 //TwoPointers();
-SlidingWindow();
+//SlidingWindow();
+HashMapAndDifference();
 
 Console.WriteLine("---- End -----");
 
@@ -42,4 +43,12 @@ static void SlidingWindow()
     var maxAve = new MaxAveSubArray().FindMaxAverage(nums, k);
     Console.WriteLine($"MaxAve: {maxAve:F5}");
     #endregion MaxAveSubArray
+}
+
+static void HashMapAndDifference()
+{
+    #region TwoSumNonSortedArray
+    var TwoSum_Output = new TwoSumNonSortedArray().TwoSum([-3,4,3,90], 0);
+    Console.WriteLine($"TwoSum: {string.Join(", ", TwoSum_Output)}");
+    #endregion TwoSumNonSortedArray
 }
