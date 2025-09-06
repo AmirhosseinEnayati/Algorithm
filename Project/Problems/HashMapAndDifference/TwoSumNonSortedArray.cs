@@ -1,5 +1,8 @@
 namespace Project.Problems.HashMapAndDifference;
 
+/// <summary>
+/// Calculate difference between the current item and the target in each iteration and search the difference in already seen items
+/// </summary>
 public class TwoSumNonSortedArray//1
 {
     public int[] TwoSum(int[] numbers, int target)
