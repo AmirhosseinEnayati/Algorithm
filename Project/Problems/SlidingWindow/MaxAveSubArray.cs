@@ -1,6 +1,6 @@
 namespace Project.Problems.SlidingWindow;
 
-public class MaxAveSubArray
+public class MaxAveSubArray //643
 {
     public double FindMaxAverage(int[] nums, int k)
     {
