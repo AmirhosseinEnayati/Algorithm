@@ -1,6 +1,6 @@
 namespace Project.Problems.TwoPointers;
 
-public class IsPalindrome
+public class IsPalindrome//125
 {
     public bool Solution(string s)
     {
