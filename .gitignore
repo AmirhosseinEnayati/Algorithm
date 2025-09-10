@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Project/obj/Debug/net9.0/Project.AssemblyInfo.cs
+/Project/obj/Debug/net9.0/Project.AssemblyInfoInputs.cache
+/Project/obj/Debug/net9.0/Project.assets.cache
+/Project/obj/Debug/net9.0/Project.GeneratedMSBuildEditorConfig.editorconfig
+/Project/obj/Debug/net9.0/Project.sourcelink.json
+/.vs/Project/CopilotIndices/17.14.1091.29919
+/.vs/Project/FileContentIndex
+/.vs/Project/v17/.suo
