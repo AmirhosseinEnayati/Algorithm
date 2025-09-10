@@ -19,7 +19,7 @@ static void TwoPointers()
     #region TwoSum
     int[] input = [2, 7, 11, 15];
     var target = 9;
-    var TwoSum_Output = new TwoSumSortedArray().TwoSum2(input, target);
+    var TwoSum_Output = new FirstTwoSum().Solution(input, target);
     Console.WriteLine($"Two sum indexes: {TwoSum_Output[0]}, {TwoSum_Output[1]}");
     #endregion TwoSum
 

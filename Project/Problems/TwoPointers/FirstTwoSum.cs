@@ -1,8 +1,8 @@
 namespace Project.Problems.TwoPointers;
 
-public class TwoSumSortedArray//167
+public class FirstTwoSum//167
 {
-    public int[] TwoSum2(int[] numbers, int target)
+    public int[] Solution(int[] numbers, int target)
     {
         var left = 0;
         var right = numbers.Length - 1;
