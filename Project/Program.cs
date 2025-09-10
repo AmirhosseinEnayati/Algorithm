@@ -41,7 +41,7 @@ static void SlidingWindow()
     #region MaxAveSubArray
     int[] nums = [0,1,1,3,3];
     var k = 4;
-    var maxAve = new MaxAveSubArray().FindMaxAverage(nums, k);
+    var maxAve = new MaxAveSubArray().Solution(nums, k);
     Console.WriteLine($"MaxAve: {maxAve:F5}");
     #endregion MaxAveSubArray
 }

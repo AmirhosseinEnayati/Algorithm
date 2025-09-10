@@ -2,7 +2,7 @@ namespace Project.Problems.SlidingWindow;
 
 public class MaxAveSubArray //643
 {
-    public double FindMaxAverage(int[] nums, int k)
+    public double Solution(int[] nums, int k)
     {
         var winSum = nums[..k].Sum();
         var maxWinSum = winSum;
