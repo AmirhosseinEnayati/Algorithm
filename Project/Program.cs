@@ -24,7 +24,7 @@ static void TwoPointers()
     #endregion TwoSum
 
     #region IsPalindrome
-    var IsPalindrome_Output = new Palindrome().IsPalindrome("A man, a plan, a canal: Panama");
+    var IsPalindrome_Output = new IsPalindrome().Solution("A man, a plan, a canal: Panama");
     Console.WriteLine($"IsPalindrome: {IsPalindrome_Output}");
     #endregion
 

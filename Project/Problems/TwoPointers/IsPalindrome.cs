@@ -1,8 +1,8 @@
 namespace Project.Problems.TwoPointers;
 
-public class Palindrome
+public class IsPalindrome
 {
-    public bool IsPalindrome(string s)
+    public bool Solution(string s)
     {
         var left = 0;
         var right = s.Length - 1;
