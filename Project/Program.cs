@@ -1,4 +1,5 @@
 using Project.Problems.HashMapAndDifference;
+using Project.Problems.Others;
 using Project.Problems.SlidingWindow;
 using Project.Problems.TwoPointers;
 
@@ -7,6 +8,7 @@ Console.WriteLine("---- Start -----");
 //TwoPointers();
 //SlidingWindow();
 //HashMapAndDifference();
+new PalindromeNumber().Solution(-211112);
 
 Console.WriteLine("---- End -----");
 
