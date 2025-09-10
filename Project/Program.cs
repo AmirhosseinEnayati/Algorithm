@@ -48,10 +48,10 @@ static void SlidingWindow()
 
 static void HashMapAndDifference()
 {
-    #region TwoSumNonSortedArray
-    var TwoSum_Output = new TwoSumNonSortedArray().TwoSum([-3,4,3,90], 0);
+    #region TwoSum
+    var TwoSum_Output = new TwoSum().Solution([-3,4,3,90], 0);
     Console.WriteLine($"TwoSum: {string.Join(", ", TwoSum_Output)}");
-    #endregion TwoSumNonSortedArray
+    #endregion TwoSum
 
     #region SubArraySumEqualsK
     var SubArraySumEqualsK_Output = new SubArraySumEqualsK().Solution([-1, -1, -3, 1, 1, 3, 5], 5);
