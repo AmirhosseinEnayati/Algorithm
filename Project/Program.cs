@@ -1,3 +1,4 @@
+using Project.Problems.Backtracking;
 using Project.Problems.HashMapAndDifference;
 using Project.Problems.Others;
 using Project.Problems.SlidingWindow;
@@ -8,7 +9,8 @@ Console.WriteLine("---- Start -----");
 //TwoPointers();
 //SlidingWindow();
 //HashMapAndDifference();
-new PalindromeNumber().Solution(-211112);
+//BackTracking();
+//Others();
 
 Console.WriteLine("---- End -----");
 
@@ -41,7 +43,7 @@ static void TwoPointers()
 static void SlidingWindow()
 {
     #region MaxAveSubArray
-    int[] nums = [0,1,1,3,3];
+    int[] nums = [0, 1, 1, 3, 3];
     var k = 4;
     var maxAve = new MaxAveSubArray().Solution(nums, k);
     Console.WriteLine($"MaxAve: {maxAve:F5}");
@@ -51,7 +53,7 @@ static void SlidingWindow()
 static void HashMapAndDifference()
 {
     #region TwoSum
-    var TwoSum_Output = new TwoSum().Solution([-3,4,3,90], 0);
+    var TwoSum_Output = new TwoSum().Solution([-3, 4, 3, 90], 0);
     Console.WriteLine($"TwoSum: {string.Join(", ", TwoSum_Output)}");
     #endregion TwoSum
 
@@ -59,4 +61,20 @@ static void HashMapAndDifference()
     var SubArraySumEqualsK_Output = new SubArraySumEqualsK().Solution([-1, -1, -3, 1, 1, 3, 5], 5);
     Console.WriteLine($"SubArraySumEqualsK_Output: {SubArraySumEqualsK_Output}");
     #endregion
+}
+
+static void BackTracking()
+{
+    #region PalindromePartitioning
+    var PalindromePartitioning_Output = new PalindromePartitioning().Solution("aab");
+    Console.WriteLine($"Palindrome_Partitioning: {PalindromePartitioning_Output}");
+    #endregion PalindromePartitioning
+}
+
+static void Others()
+{
+    #region PalindromeNumber
+    var PalindromeNumber_Output = new PalindromeNumber().Solution(-211112);
+    Console.WriteLine($"PalindromeNumber_Output: {PalindromeNumber_Output}");
+    #endregion PalindromeNumber
 }
