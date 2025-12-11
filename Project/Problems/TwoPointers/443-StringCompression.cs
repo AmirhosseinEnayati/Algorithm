@@ -2,7 +2,7 @@
 {
     public int Compress(char[] chars)
     {
-        int seriesStartIndex = 0, currentIndex = 0, seriesLength = 0, compressedLength = 0;
+        int seriesStartIndex = 0, currentIndex = 0, seriesCharRepeat = 0, compressedLength = 0;
 
         while (currentIndex < chars.Length)
         {
@@ -10,36 +10,50 @@
             {
                 //On new series
 
-                seriesStartIndex = compressedLength;
-                seriesLength = 1;
+                seriesStartIndex = compressedLength;//Change series start index to the new series
+                seriesCharRepeat = 1;
                 chars[compressedLength] = chars[currentIndex];
                 compressedLength++;
             }
             else
             {
-                //the rest of a series
+                //On the rest of a series
 
-                seriesLength++;
-                var seriesLengthSize = 0;
-                int lengthTemp = seriesLength;
+                seriesCharRepeat++;
+
+                #region Calculate the length of series repetition number
+                //By recurring divisions
+                //Like a561, 561 has the length 3. stores in digitsCount
+
+                var digitsCount = 0;
+                var lengthTemp = seriesCharRepeat;
                 while (lengthTemp > 0)
                 {
-                    seriesLengthSize++;
+                    digitsCount++;
                     lengthTemp = lengthTemp / 10;
                 }
 
-                lengthTemp = seriesLength;
+                #endregion
 
-                if (seriesLengthSize == compressedLength - seriesStartIndex)
+                if (digitsCount == compressedLength - seriesStartIndex)//When there is transition from a9 to a10 or a99 to a100 for instance
                     compressedLength++;
 
+                #region Replace series repetition number in input chars
+                //By recurring divisions
+                //Like a561 which has to be stored like:
+                //'a', _, _, '1' then
+                //'a', _, 6, '1' then
+                //'a', 5, 6, '1' 
+
+                lengthTemp = seriesCharRepeat;//For preventing seriesCharRepeat changes
+
                 while (lengthTemp > 0)
                 {
-                    chars[seriesStartIndex + seriesLengthSize--] = (char)('0' + lengthTemp % 10);
+                    chars[seriesStartIndex + digitsCount--] = (char)('0' + lengthTemp % 10);
                     lengthTemp = lengthTemp / 10;
-                }
+                } 
 
-
+                #endregion
             }
 
             currentIndex++;
