@@ -39,3 +39,11 @@
 *.wsuo
 *.db
 *.suo
+/.vs/Project/CopilotIndices/18.0.927.32057/CodeChunks.db-shm
+/.vs/Project/CopilotIndices/18.0.927.32057/CodeChunks.db-wal
+/.vs/Project/CopilotIndices/18.0.927.32057/SemanticSymbols.db-shm
+/.vs/Project/CopilotIndices/18.0.927.32057/SemanticSymbols.db-wal
+/.vs/Project/v18/DocumentLayout.backup.json
+/.vs/Project/v18/DocumentLayout.json
+/Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
+/Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
