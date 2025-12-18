@@ -47,3 +47,7 @@
 /.vs/Project/v18/DocumentLayout.json
 /Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
 /Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
+*.json
+*.testlog
+*.manifest
+*.bin
