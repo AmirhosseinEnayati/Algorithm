@@ -4,46 +4,37 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength
 {
     public int MaxVowels(string s, int k)
     {
-        int maxVowelCount = 0;
-        int windowVowelCount = 0;
-        int i = 0;
+        int maxVowelCount = 0, windowVowelCount=0, index=0;
 
-        while (i < k)
+        while (index < s.Length)
         {
-            if (IsVowel(s[i++]))
-                windowVowelCount++;
+            if (index < k)
+            {
+                if(IsVowel(s[index]))
+                {
+                    windowVowelCount++;
+                    maxVowelCount = windowVowelCount;
+                }
+            }
+            else
+            {
+                if (IsVowel(s[index]))
+                    windowVowelCount++;
+                if (IsVowel(s[index - k]))
+                    windowVowelCount--;
+                if (windowVowelCount > maxVowelCount)
+                    maxVowelCount = windowVowelCount;
+            }
 
-        }
-
-        maxVowelCount = windowVowelCount;
-
-        while (i < s.Length)
-        {
-            if (IsVowel(s[i]))
-                windowVowelCount++;
-            if (IsVowel(s[i - k]))
-                windowVowelCount--;
-            if (windowVowelCount > maxVowelCount)
-                maxVowelCount = windowVowelCount;
-
-            i++;
+            index++;
         }
 
         return maxVowelCount;
     }
 
-    public bool IsVowel(char c)
+    public bool IsVowel(char letter) => letter switch
     {
-        switch (c)
-        {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                return true;
-            default:
-                return false;
-        }
-    }
+        'a' or 'e' or 'i' or 'o' or 'u' => true,
+        _ => false,
+    };
 }
