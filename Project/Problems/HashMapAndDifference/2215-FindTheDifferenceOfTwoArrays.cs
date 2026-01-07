@@ -31,13 +31,11 @@ public class FindTheDifferenceOfTwoArrays
 
         foreach (var item in dictionary)
         {
-            dictionary.TryGetValue(item.Key, out int value);
-
-            if (value == 1)
+            if (item.Value == 1)
             {
                 listNums1.Add(item.Key);
             }
-            else if (value == 2)
+            else if (item.Value == 2)
             {
                 listNums2.Add(item.Key);
             }
