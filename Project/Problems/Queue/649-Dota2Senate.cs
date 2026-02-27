@@ -1,4 +1,4 @@
-﻿namespace Project.Problems.Others;
+﻿namespace Project.Problems.Queue;
 
 public class Dota2Senate
 {
