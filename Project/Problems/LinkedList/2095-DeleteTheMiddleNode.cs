@@ -7,6 +7,24 @@ public class DeleteTheMiddleNode
         if (head.next is null)
             return null;
 
+        var slow = head;
+        var fast = head.next.next;  //Two steps forward
+
+        while (fast is not null && fast.next is not null)
+        {
+            slow = slow.next!;
+            fast = fast.next.next;
+        }
+
+        slow.next = slow.next!.next;
+        return head;
+    }
+
+/*    public ListNode? DeleteMiddle(ListNode head)
+    {
+        if (head.next is null)
+            return null;
+
         var current = head;
         //Count nodes
         var count = 1;
@@ -16,7 +34,7 @@ public class DeleteTheMiddleNode
             current = current.next;
         }
 
-        int middle = count / 2; 
+        int middle = count / 2;
 
         //Change next for the middle's previous node 
         current = head;
@@ -28,7 +46,7 @@ public class DeleteTheMiddleNode
         current!.next = current.next!.next;
 
         return head;
-    }
+    }*/
 }
 
 public class ListNode
