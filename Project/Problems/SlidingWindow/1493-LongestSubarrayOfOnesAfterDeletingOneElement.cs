@@ -2,6 +2,13 @@
 
 public class LongestSubarrayOfOnesAfterDeletingOneElement
 {
+/*
+ left: 
+   - pointer to the last seen zero 
+   - when the new zero has been seen, the pointer will be reset to the new one.
+ right: 
+   - current pointer
+ */
     public int LongestSubarray(int[] nums)
     {
         int left = 0, right = 0, maxSize = 0, firstZeroIndex = -1;
