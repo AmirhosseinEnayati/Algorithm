@@ -1,27 +1,25 @@
+using Project.Problems.BinaryTree;
+
 Main();
 
 static void Main()
 {
-    new Project.Problems.BinaryTree.LeafSimilarTrees().LeafSimilar(
-        new Project.Problems.BinaryTree.TreeNode(3,
-          new Project.Problems.BinaryTree.TreeNode(5, 
-            new Project.Problems.BinaryTree.TreeNode(6,null,null), 
-            new Project.Problems.BinaryTree.TreeNode(2,
-               new Project.Problems.BinaryTree.TreeNode(7,null,null),
-               new Project.Problems.BinaryTree.TreeNode(4,null,null)
-               )),
-          new Project.Problems.BinaryTree.TreeNode(1, 
-            new Project.Problems.BinaryTree.TreeNode(9,null,null), 
-            new Project.Problems.BinaryTree.TreeNode(8,null,null)))
-        ,
-    new Project.Problems.BinaryTree.TreeNode(3,
-        new Project.Problems.BinaryTree.TreeNode(5, 
-            new Project.Problems.BinaryTree.TreeNode(6,null,null), 
-            new Project.Problems.BinaryTree.TreeNode(7,null,null)),
-        new Project.Problems.BinaryTree.TreeNode(1, 
-            new Project.Problems.BinaryTree.TreeNode(4,null,null), 
-            new Project.Problems.BinaryTree.TreeNode(2,
-              new Project.Problems.BinaryTree.TreeNode(9,null,null),
-              new Project.Problems.BinaryTree.TreeNode(8,null,null))))
-    );
+
+    var x = new LowestCommonAncestorOfABinaryTree().LowestCommonAncestor(
+         new TreeNode(3,
+         new TreeNode(5,
+         new TreeNode(6, null, null),
+         new TreeNode(2,
+         new TreeNode(7, null, null),
+         new TreeNode(4, null, null))),
+         new TreeNode(1,
+         new TreeNode(0, null, null),
+         new TreeNode(8, null, null))),
+
+        new TreeNode(5, null, null),
+        new TreeNode(1, null, null)
+        );
+
+
+    int x2 = 0;
 }
