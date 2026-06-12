@@ -1,53 +1,190 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# ============================================================================
+# .NET Project Gitignore - Comprehensive patterns for .NET development
+# ============================================================================
 
-/Project/obj/Debug/net9.0/Project.AssemblyInfo.cs
-/Project/obj/Debug/net9.0/Project.AssemblyInfoInputs.cache
-/Project/obj/Debug/net9.0/Project.assets.cache
-/Project/obj/Debug/net9.0/Project.GeneratedMSBuildEditorConfig.editorconfig
-/Project/obj/Debug/net9.0/Project.sourcelink.json
-/.vs/Project/CopilotIndices/17.14.1091.29919
-/.vs/Project/FileContentIndex
-/.vs/Project/v17/.suo
-/.vs/Project/v17/DocumentLayout.backup.json
-/.vs/Project/v17/DocumentLayout.json
-/.vs/Project/v17/DocumentLayout.backup.json
-/.vs/Project/v17/DocumentLayout.json
-/Project/bin/Debug/net9.0/Project.dll
-/Project/bin/Debug/net9.0/Project.exe
-/Project/bin/Debug/net9.0/Project.pdb
-/Project/obj/Debug/net9.0/ref/Project.dll
-/Project/obj/Debug/net9.0/refint/Project.dll
-/Project/obj/Debug/net9.0/apphost.exe
-/Project/obj/Debug/net9.0/Project.csproj.BuildWithSkipAnalyzers
-/Project/obj/Debug/net9.0/Project.csproj.CoreCompileInputs.cache
-/Project/obj/Debug/net9.0/Project.csproj.FileListAbsolute.txt
-/Project/obj/Debug/net9.0/Project.dll
-/Project/obj/Debug/net9.0/Project.genruntimeconfig.cache
-/Project/obj/Debug/net9.0/Project.pdb
-/Project/obj/project.assets.json
-/Project/obj/Project.csproj.nuget.dgspec.json
-/Project/obj/Project.csproj.nuget.g.props
-/Project/obj/project.nuget.cache
-/.vs/Project/DesignTimeBuild/.dtbcache.v2
-/.vs/Project/v17/.futdcache.v2
-/.vs/ProjectEvaluation/project.metadata.v9.bin
-/.vs/ProjectEvaluation/project.projects.v9.bin
-/.vs/ProjectEvaluation/project.strings.v9.bin
-/.vs/Project/FileContentIndex/d6bbb453-c536-49ea-b8fa-126e692f0905.vsidx
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directories
+.vs/
+.vscode/
+
+# Visual Studio Code
+*.code-workspace
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Visual Studio Rider / JetBrains IDEs
+.idea/
+.idea_modules/
+*.sln.iml
+*.DotSettings
+*.DotSettings.user
+riderModule.iml
+
+# User-specific Visual Studio files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider-specific files
+.idea/
+.idea_modules/
+
+# Local History for Visual Studio
+.localhistory/
+
+# Visual Studio History (VSHistory) files
+.vshistory/
+
+# BeatPulse healthcheck temp database
+healthchecksdb
+
+# NUnit Test Results
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+*.nuget.cache
+packages/
+!packages/build/
+.nuget/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+_ReSharper.*/
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# Build files
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.exe
+*.exp
+*.lib
+*.ilk
+*.aps
+*.ncb
+*.suo
+*.sln.docstates
+
+# Profiler files
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Build Tool
+MSBuild.log
+MSBuild.err
+
+# Test Files
+*.coverage
+*.coveragexml
+TestCoverageReports/
+htmlcov/
+.tox/
+.nox/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+PublishScripts/
+
+# MyGet build specific
+*.myget
+
+# NuGet Symbol Packages
+*.snupkg
+
+# Microsoft Azure Artifacts
+azure-pipelines/
+.azure/
+
+# The Microsoft Azure Storage Emulator
+WAStorageEmulatorTests/
+
+# Backup & Temporary Files
+*.backup
+*.bak
+*.cache
+*.swp
+*.swo
+*~
+.#*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+.directory
+.AppleDouble
+.LSOverride
+*.~lock.#*#
+
+# Environment files
+.env
+.env.local
+.env.*.local
+launchSettings.json
+
+# IDE-specific files
+.editorconfig
+.jbrrc
+
+# Miscellaneous
+*.manifest
 *.wsuo
 *.db
-*.suo
-/.vs/Project/CopilotIndices/18.0.927.32057/CodeChunks.db-shm
-/.vs/Project/CopilotIndices/18.0.927.32057/CodeChunks.db-wal
-/.vs/Project/CopilotIndices/18.0.927.32057/SemanticSymbols.db-shm
-/.vs/Project/CopilotIndices/18.0.927.32057/SemanticSymbols.db-wal
-/.vs/Project/v18/DocumentLayout.backup.json
-/.vs/Project/v18/DocumentLayout.json
-/Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
-/Project/obj/Debug/net9.0/Project.GlobalUsings.g.cs
-*.json
+*.db-shm
+*.db-wal
 *.testlog
-*.manifest
-*.bin
+.vs_code/
+vscode/
+
+# Code coverage
+coverage/
+coverage.cobertura.xml
+/.vs/Project/v18/.futdcache.v2
+/.vs/Project/v18/.futdcache.v2
+/.vs/Project/v18/.futdcache.v2
